@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place Order</title>
+</head>
+<body>
+    <h1>Place Your Order</h1>
+    <form action="{% url 'place_order' %}" method="post">
+        {% csrf_token %}
+        <!-- Form fields here -->
+    </form>
+</body>
+</html>
